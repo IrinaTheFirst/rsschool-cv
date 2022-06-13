@@ -4,9 +4,144 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>CV</title>
 </head>
 <body>
-    <p>тут будет CV</p>
+    <header>
+        <div class="container">
+            <nav class="main_menu">
+                <li class="menu_link"><a href="#about">About me</a></li>
+                <li class="menu_link"><a href="#contacts">Contacts</a></li>
+                <li class="menu_link"><a href="#skills">My Skills</a></li>
+                <li class="menu_link"><a href="#experience">Experience</a></li>
+                <li class="menu_link"><a href="#code">Code example</a></li>
+                <li class="menu_link"><a href="#education">Education</a></li>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+<!-- NAME -->
+            <section class="name">
+                <div class="photo">
+                    <img src="img/imarealonecat.jpg" alt="#">
+                </div>
+                <h1 class="main_title">nikulina irina</h1>
+            </section>
+<!-- ABOUT -->
+            <section class="about" id="about">
+                <div class="about_box">
+                   <h2 class="title_second">About me</h2>
+                   <p class="text about_text">I'm in my middle-ish thirties. Live in Saint-Petersburg, Russia. I was a school teacher once
+                    in my small hometown. Taught children russian language and literature. One day I quit my job and
+                    move to SPb. Been here and there, doing stuff, working hard. Well you know just trying my best
+                    to live this life like everyone (✿◡‿◡) Couple years ago I was lucky to study HTML+CSS
+                    and I liked it so much! I made several landing pages and pare of simple sites.
+                    But my knowledges are still so far from good.. And I'm ready to learn!
+                    I hope one day I will be able to call myself a full-fledged developer!</p>
+                </div>
+            </section>
+<!-- CONTACTS -->
+            <section class="contacts" id="contacts">
+                <div class="contacts_box">
+                    <h2 class="title_second">Contacts</h2>
+                    <ul>
+                        <li class="list_link text">telegram: <a href="https://t.me/imarealonecat">@imarealonecat</a></li>
+                        <li class="list_link text">tel: <a href="tel:+79117898497">+7(911)789-84-97</a></li>
+                        <li class="list_link text">e-mail: <a href="mailto:Nikulinairina1@yandex.ru">Nikulinairina1@yandex.ru</a></li>
+                        <li class="list_link text">discord: <a href="https://discord.com/users/916652469176664124">Irina Nikulina</a></li>
+                    </ul>
+                </div> 
+            </section>
+<!-- SKILLS -->
+            <section class="skills" id="skills">
+                <div class="skills_box">
+                    <h2 class="title_second">My Skills</h2>
+                    <ul class="text">
+                        <li class="list_title"><b>Hard</b>
+                            <ol>
+                                <li class="list_link">HTML , CSS , Basic JS</li>
+                                <li class="list_link">VS Code</li>
+                                <li class="list_link">Ps Adobe, Ai Adobe, Figma</li>
+                            </ol>
+                        </li>
+                        <li class="list_title"><b>Soft</b>
+                            <ol>
+                                <li class="list_link">fast learner</li>
+                                <li class="list_link">stress-resistant</li>
+                                <li class="list_link">know how "to google"</li>
+                                <li class="list_link">team player</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+<!-- EXPERIENCE -->
+            <section class="experience" id="experience">
+                <div class="experience_box">
+                    <h2 class="title_second">Experience</h2>
+                    <ul class="works_list text">
+                        <li class="list_link">site for branding and digital creative agency 
+                            <a href="https://beprofi.info/index.html">BeProfi</a>
+                        </li>
+                        <li class="list_link">site for beauty salon
+                            <a href="https://luckylike.club">LuckyLike</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+<!-- CODE -->
+            <section class="code" id="code">
+                <div class="code_box">
+                    <h2 class="title_second">Code example</h2>
+                    <pre class="text">
+                        <code>
+                            function multiply(a, b){
+                            a * b
+                            return a*b}
+                        </code>
+                    </pre>
+                </div>
+            </section>
+<!-- EDUCATION -->
+            <section class="education" id="education">
+                <div class="education_box">
+                    <h2 class="title_second">Education</h2>
+                    <ul class="text">
+                        <li class="list_link">
+                        Pedagogical Institute Saratov State University named by N.G. Chernyshevsky<br>
+                        <i>Specialist's degree "Russian language and literature teacher"</i>
+                        </li>
+                        <li><b>Online Courses:</b>
+                            <ol class="sublist">
+                                <li class="list_link">Epic skills: HTML, CSS</li>
+                                <li class="list_link">Code Basics: HTML, CSS, JS</li>
+                                <li class="list_link">HTML Academy: HTML, CSS</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <div class="eng_level">
+                        <h2 class="title_second">English level</h2>
+                        <div class="ef_test_results">
+                            <img src="img/eng_test.jpg" alt="EF test results">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer container ">
+        <div class="footer_box">
+            <div class="footer_git text">   
+                <img src="img/git.png" alt="git">
+                <a href="https://github.com/IrinaTheFirst" class="footer_git_link">IrinaTheFirst</a>
+                <p>2022</p>
+            </div>
+            <div class="footer_rsschool">
+                <a href="https://rs.school/js/"><img src="img/rs_school_js.png" alt="logo rsshool"></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

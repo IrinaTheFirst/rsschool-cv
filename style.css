@@ -1,6 +1,220 @@
-*{
-    padding: 0;
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap);
+:root {
+    --main-font: 'Montserrat', sans-serif;
+    --fsz-h1: 3rem;
+    --fsz-h2: 1.8rem;
+    --fsz-menu: 1.1rem;
+    --color-text: #C0C0C0;
+    --color-link: #808080;
+    --color-orange: #b8812f;
+    --bg-color: #696969;
+    --fon-color: #606060;
+    --mrg-section: 2%;
+    --border-section: 40px;
+    --lh-section: 1.5;
+    --padding-section: 20px;
+
+
+}
+* clear */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--ff-inter);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: var(--color-white);
+}
+body, ul, h1, h2, h3, h4, h5, h6, p {
     margin: 0;
+    padding: 0;
+} 
+a {
+    color: inherit;
     text-decoration: none;
     outline: none;
+}
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+input, textarea {
+    outline: 0;
+    outline-offset: 0;
+}
+  
+button:hover {
+    cursor: pointer;
+}
+  
+ul, li {
+    list-style-type: none;
+}
+/* clear end */
+body{
+    margin: 0 auto;
+    background-color: var(--bg-color);
+    font-family: var(--main-font);
+    color: var(--color-text);
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #414141;
+}
+.main_title{
+    color: var(--color-orange);
+    font-size: var(--fsz-h1);
+    text-transform: uppercase;
+}
+.title_second{
+    font-size: var(--fsz-h2);
+    margin-bottom: 10px;
+}
+/**** MENU ****/
+.main_menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: #b8812f 2px solid;
+}
+.menu_link a{
+    text-transform: uppercase;
+    font-size: var(--fsz-menu);
+    font-weight: 700;
+    transition: 0.5s;
+}
+.menu_link a:hover{
+    color: var(--color-orange);
+}
+/* NAME */
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: var(--border-section);
+    gap: 3%;
+    border-bottom: #b8812f 2px solid;
+}
+/* ABOUT ME */
+.about_box{
+    max-width: 50%;
+    background-color: var(--fon-color);
+    border-radius: var(--border-section);
+    padding: var(--padding-section);
+    margin-bottom: var(--mrg-section);
+}
+.photo{
+    width: 250px;
+    height: auto;
+}
+.photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+/* CONTACTS */
+.contacts{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: var(--mrg-section);
+}
+.contacts_box{
+    width: 50%;
+    background-color:var(--fon-color);
+    border-radius: var(--border-section);
+    padding: var(--padding-section);
+}
+.list_link{
+    margin-bottom: 10px;
+}
+.list_link a{
+    color: var(--color-orange);
+    font-weight: 700;
+}
+/* SKILLS */
+.skills {
+    margin-bottom: var(--mrg-section);
+}
+.skills_box{
+    width: 50%;
+    background-color: var(--fon-color);
+    border-radius: var(--border-section);
+    padding: var(--padding-section);
+}
+/* EXPERIENCE */
+.experience{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: var(--mrg-section);
+}
+.experience_box{
+    padding: 20px;
+    width: 50%;
+    background-color: var(--fon-color);
+    border-radius: var(--border-section);
+    padding: var(--padding-section);
+}
+/* CODE */
+.code {
+    margin-bottom: var(--mrg-section);
+}
+.code_box {
+    width: 50%;
+    background-color: var(--fon-color);
+    border-radius: var(--border-section);
+    padding: var(--padding-section);
+}
+pre {
+    text-align: left;
+    white-space: pre-line;
+}
+/* EDUCATION */
+.education {
+    display: flex;
+    justify-content: flex-end;
+}
+.education_box {
+    width: 50%;
+    background-color: var(--fon-color);
+    border-radius: var(--border-section);
+    padding: var(--padding-section);
+    margin-bottom: 20px;
+}
+/* FOOTER */
+.footer_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: #b8812f 2px solid;
+    padding: 20px;
+}
+.footer_git{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    font-weight: 700;
+}
+.footer_git img{
+    width: 35px;
+    height: 35px;
+    margin-right: 2%;
+}
+.footer_git_link{
+    color: var(--color-orange);
+    margin-right: 2%;
+}
+.footer_rsschool img{
+    width: 100px;
+    height: auto;
 }
