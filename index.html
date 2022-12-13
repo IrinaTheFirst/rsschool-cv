@@ -4,10 +4,159 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <title>CV</title>
+    <title>Carriculum Vitae</title>
 </head>
 <body>
-    Here will be CV
+    <header>
+        <div class="container container_padding">
+            <nav class="menu">
+                <ul class="menu_list">
+                    <li class="menu_item"><a href="#about">about me</a></li>
+                    <li class="menu_item"><a href="#contacts">contacts</a></li>
+                    <li class="menu_item"><a href="#skills">skills</a></li>
+                    <li class="menu_item"><a href="#experience">experience</a></li>
+                    <li class="menu_item"><a href="#code">code example</a></li>
+                    <li class="menu_item"><a href="#education">education</a></li>
+                </tul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="main_content">
+               <!-- RIGHT BLOCK -->
+            <div class="right_block container_padding">
+                <!-- NAME -->
+                    <section class="name">
+                        <div class="photo">
+                            <img src="img/imarealonecat.jpg" alt="#">
+                        </div>
+                        <div class="main_title">
+                            <h1>irina<br>nikulina</h1>
+                        </div>
+                    </section>
+                <!-- CONTACTS -->
+                    <section class="contacts" id="contacts">
+                        <h2 class="section_title">contacts</h2>
+                        <div class="contacts_box">
+                            <ul class="contacts_list">
+                                <li class="contacts_item">telegram:<a href="https://t.me/imarealonecat">@imarealonecat</a></li>
+                                <li class="contacts_item">tel: <a href="tel:+79117898497">+7(911)789-84-97</a></li>
+                                <li class="contacts_item">e-mail: <a href="mailto:Nikulinairina1@yandex.ru">Nikulinairina1@yandex.ru</a></li>
+                                <li class="contacts_item">discord: <a href="https://discord.com/users/916652469176664124">Irina Nikulina</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+    <!-- LEFT BLOCK -->
+                <div class="left_block container_padding">
+                <!-- ABOUT ME -->
+                <section class="about" id="about">
+                    <div class="about_content">
+                        <h2 class="section_title">about me</h2>
+                        <p>I'm in my middle-ish thirties. Live in Saint-Petersburg, Russia. I was a school teacher once
+                            in my small hometown. Taught children russian language and literature. One day I quit my job and
+                            move to SPb. Been here and there, doing stuff, working hard. Well you know just trying my best
+                            to live this life like everyone (✿◡‿◡) Couple years ago I was lucky to study HTML+CSS
+                            and I liked it so much! I made several landing pages and pare of simple sites.
+                            But my knowledges are still so far from good.. And I'm ready to learn!
+                            I hope one day I will be able to call myself a full-fledged developer!</p>
+                    </div>
+                </section>
+                <!-- SKILLS -->
+                <section class="skills" id="skills">
+                    <h2 class="section_title">skills</h2>
+                    <ul>
+                        <li><b>Hard</b>
+                            <ol>
+                                <li>HTML , CSS , Basic JS</li>
+                                <li>VS Code</li>
+                                <li>Ps Adobe, Ai Adobe, Figma</li>
+                            </ol>
+                        </li>
+                        <li><b>Soft</b>
+                            <ol>
+                                <li>fast learner</li>
+                                <li>stress-resistant</li>
+                                <li>know how "to google"</li>
+                                <li>team player</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </section>
+                <!-- EXPERIENCE -->
+                <section class="experience" id="experience">
+                    <div class="experience_box">
+                        <h2 class="section_title">Experience</h2>
+                        <ul>
+                            <li>site for branding and digital creative agency 
+                                <a href="https://beprofi.info/index.html" class="experience_link">BeProfi</a>
+                            </li>
+                            <li>site for beauty salon
+                                <a href="https://luckylike.club" class="experience_link">LuckyLike</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                </section>
+                <!-- CODE EXAMPLE -->
+                <section class="code" id="code">
+                    <div class="code_box">
+                        <h2 class="section_title">code example</h2>
+                        <p>Largest Square Inside A Circle</p>
+                        <pre>
+                            <code>
+                                function arealLargestSquere(r) {
+                                    let squereDiagonal = r*2;
+                                    let squereArea = Math.pow(squereDiagonal, 2) / 2;
+                                    return squereArea;
+                                }
+                            </code>
+                        </pre>
+                    </div>
+                </section>
+                <!-- EDUCATION -->
+                <section class="education" id="education">
+                    <div class="education_box">
+                        <h2 class="section_title">Education</h2>
+                        <ul class="education_list">
+                            <li>
+                            Pedagogical Institute Saratov State University named by N.G. Chernyshevsky<br>
+                            <i>Specialist's degree "Russian language and literature teacher"</i>
+                            </li>
+                            <li><b>Online Courses:</b>
+                                <ol>
+                                    <li>Epic skills: HTML, CSS</li>
+                                    <li>Code Basics: HTML, CSS, JS</li>
+                                    <li>HTML Academy: HTML, CSS</li>
+                                </ol>
+                            </li>
+                        </ul>
+                        <div class="eng_level">
+                            <h2 class="section_title">English level</h2>
+                            <div class="ef_test_results">
+                                <img src="img/eng_test.jpg" alt="EF test results">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                </div> 
+            </div>
+        </div>
+    </main>
+    <footer class="footer container container_padding">
+        <div class="footer_box">
+            <div class="footer_git">   
+                <img src="img/git.png" alt="git">
+                <a href="https://github.com/IrinaTheFirst" class="footer_git_link">IrinaTheFirst</a>
+                <p>2022</p>
+            </div>
+            <div class="footer_rsschool">
+                <a href="https://rs.school/js/"><img src="img/rs_school_js.png" alt="logo rsshool"></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
