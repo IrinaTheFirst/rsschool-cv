@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+:root {
+    --main-font: 'Inter', sans-serif;
+    --menu-fsz: 1.3rem;
+    --h1-fsz: 1.5rem;
+    --h2-fsz: 1.2rem;
+    --maintext-fsz: 1rem;
+    --fw-reg: 400;
+    --fw-bold: 700;
+    --color-orange: #b8812f;
+    --color-white: #ffffff;
+    --color-darkgrey: #414141;
+    --body-bg-color: #606060;
+    --mrg-section: 5%;
+    
+
+/* ***CLEAR START*** */
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: var(--fw-reg);
+    color: var(--color-darkgrey);
+}
+body, ul, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+}
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+input, textarea {
+    outline: 0;
+    outline-offset: 0;
+}
+button:hover {
+    cursor: pointer;
+}
+ul, li {
+    list-style-type: none;
+}
+/* ***CLEAR END*** */
+body{
+    background-color: var(--body-bg-color);
+    margin: 0 auto;
+    color: var(--color-darkgrey);
+    font-family: var(--main-font);
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: var(--color-darkgrey);
+}
+.container_padding{
+    padding: 0 30px;
+}
+.main_title{
+    font-size: var(--h1-fsz);
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
+    font-weight: var(--fw-bold);
+    margin-left: 18px;
+    color: var(--color-orange);
+}
+.section_title{
+    font-size: var(--h2-fsz);
+    font-weight: var(--fw-bold);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: var(--fw-bold);
+    color: var(--color-white);
+}
+/* ***HEADER*** */
+.menu{
+    padding: 20px 0;
+}
+.menu_list{
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-white);
+    font-size: var(--menu-fsz);
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
+}
+.menu_item a{
+transition: 1s all;
+}
+.menu_item a:hover{
+    color: var(--color-orange);
+}
+/* ***MAIN*** */
+.main_content{
+    display: flex;
+}
+.right_block{
+    width: 40%;
+    padding-top: 50px;
+}
+/* NAME */
+.name{
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.photo{
+    width: 120px;
+    height: auto;
+}
+.photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+/* CONTACTS */
+.contacts_list{
+    color: var(--color-white);
+}
+.contacts_item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+}
+.contacts_item a{
+    color: var(--color-orange);
+    transition: 1s all;
+}
+.contacts_item a:hover{
+    color: var(--color-white);
+}
+
+/* LEFT BLOCK */
+.left_block{
+    width: 60%;
+    background-color: var(--color-orange);
+    padding-top: 50px;
+}
+/* ABOUT */
+.about{
+    margin-bottom: var(--mrg-section);
+}
+/* SKILLS */
+.skills{
+    margin-bottom: var(--mrg-section);
+}
+/* EXPERIENCE */
+.experience{
+    margin-bottom: var(--mrg-section);
+}
+.experience_link {
+    font-weight: var(--fw-bold);
+}
+/* CODE */
+.code{
+    margin-bottom: var(--mrg-section);
+}
+pre {
+    text-align: left;
+    white-space: pre-line;
+    margin: 0;
+}
+/* EDUCATION */
+.education_list{
+    margin-bottom: var(--mrg-section);
+}
+.ef_test_results{
+    width: 250px;
+    height: auto;
+}
+.ef_test_results img{
+    width: 100%;
+    height: 100%;
+}
+/* ***FOOTER*** */
+.footer{
+    background-color: var(--color-orange);
+}
+.footer_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.footer_git{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+.footer_git p{
+    color: #ffffff;
+    font-weight: var(--fw-bold);
+}
+.footer_git img{
+    width: 35px;
+    height: 35px;
+    margin-right: 5%;
+}
+.footer_git_link{
+    color: var(--color-white);
+    margin-right:5%;
+    font-weight: var(--fw-bold);
+    transition: 1s all;
+}
+.footer_git_link:hover{
+    color: var(--color-darkgrey);
+}
+.footer_rsschool img{
+    width: 100px;
+    height: auto;
+}
+
